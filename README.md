@@ -1,1 +1,1 @@
-# kimbug-study
+# GAMMJ study
