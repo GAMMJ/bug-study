@@ -1,0 +1,33 @@
+<!-- 논리적으로 완결성 있는 집합체를 마크업할때 묶어줘야하는데 이럴때 div보다 section 이 semantic함 -->
+<section>
+  <h1>What's happening?</h1>
+
+  <form action="#" method="post">
+    <img src="#" alt="@kimminjae" />
+    <textarea placeholder="What's happening?" maxlength="280"></textarea>
+    <button type="button" aria-label="Upload files">
+      <!-- icon -->
+    </button>
+    <!--나중에 js로 버튼 기능 넣어야하는데 쩔수없이 디자인하려고 button넣음 -->
+    <input type="file" multiple accept="image/*, video/*" />
+    <button type="button" aria-label="Search GIFs">
+      <!-- icon -->
+    </button>
+    <button type="button" aria-label="Create a poll">
+      <!-- icon -->
+    </button>
+    <button type="button" aria-label="Choose emoji">
+      <!-- icon -->
+    </button>
+    <strong aria-label="0 out of 280 characters">
+      <!-- js로 0을 타이핑할때마다 늘려주기 -->
+    </strong>
+    <button type="button" aria-label="at another tweet">
+      <!-- icon -->
+    </button>
+    <button type="submit">
+      <!-- icon -->
+      Tweet
+    </button>
+  </form>
+</section>
