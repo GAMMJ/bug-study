@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Kimmj";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/NanumSquareRoundR.eot");
+  src: url("./assets/fonts/NanumSquareRoundR.eot?#iefix") format("embedded-opentype"),
+    url("./assets/font/NanumSquareRoundR.woff2") format("woff2"),
+    url("./assets/fonts/NanumSquareRoundR.woff") format("woff"),
+    url("./assets/fonts/NanumSquareRoundR.ttf") format("truetype");
+}

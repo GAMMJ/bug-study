@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 216px;
+}
+
+.loading-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33333333;
+  color: #151b26;
+  padding: 80px 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation-name: text;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+}
+
+.progress-bar {
+  position: relative;
+  background-color: #e5eaef;
+  border-radius: 100px;
+  width: 300px;
+  height: 12px;
+  overflow: hidden; /*녹색바 이상으로 가는거 잘라버리기*/
+}
+
+.progress-bar-gauge {
+  position: absolute;
+  background-color: #13ce66;
+  height: 12px;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  animation-name: loading-bar;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes text {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  90% {
+    width: 50%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
